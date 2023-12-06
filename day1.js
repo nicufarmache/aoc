@@ -5,7 +5,6 @@ const input = fs.readFileSync('./input/day1.txt', 'utf8');
 const part1 = (input) => {
   return input
     .split('\n')
-    .filter(line => line!=='' )
     .map(line => line
       .split('')
       .filter( c => !isNaN(parseInt(c)) )
@@ -17,7 +16,6 @@ const part1 = (input) => {
 const part2 = (input) => {
   return input
     .split('\n')
-    .filter(line => line!=='' )
     .map(line => line
       .replaceAll('one', 'one1one')
       .replaceAll('two', 'two2two')
